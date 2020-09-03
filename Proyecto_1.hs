@@ -139,8 +139,33 @@ hayMultiplo' x xs = existe' xs (\y -> mod y x == 0)
 
 {-
 c) sumaCuadrados :: Int -> Int, dado un número no negativo n, calcula la suma de
-los primeros n cuadrados.
+los primeros n cuadrados. (Voy a incluir 0^2 y voy a dejar afuera n^2)
 
 Ayuda: En Haskell se puede escribir la lista que contiene el rango de números entre n
 y m como [n..m].
 -}
+
+--Devuelve el cuadrado de un número
+cuadrado :: Int -> Int
+cuadrado x = x ^ (2 :: Int)  -- 2 :: Int resuelve un warning que me molestaba. No afecta al resultado y se puede omitir.
+
+sumaCuadrados :: Int -> Int
+sumaCuadrados n = sumatoria' [0..n-1] cuadrado
+
+--Hace lo mismo que sumaCuadrados, pero usa una función lambda en lugar de una auxiliar 
+sumaCuadrados' :: Int -> Int
+sumaCuadrados' n = sumatoria' [0..n-1] (\x -> x ^ (2 ::Int)) -- 2 :: Int resuelve un warning que me molestaba. No afecta al resultado y se puede omitir.
+
+{-
+d) ¿Se te ocurre como redefinir factorial (ej. 2d) para evitar usar recursión?
+-}
+
+factorial' :: Int -> Int 
+factorial' x = productoria' [1..x] id
+
+{-ç
+e) multiplicaPares :: [Int] -> Int que calcula el producto de todos los números pares de una lista.
+-}
+
+multiplicaPares :: [Int] -> Int
+multiplicaPares xs = productoria' (filter even xs)  id
