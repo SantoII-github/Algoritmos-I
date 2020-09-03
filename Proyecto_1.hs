@@ -163,7 +163,7 @@ d) ¿Se te ocurre como redefinir factorial (ej. 2d) para evitar usar recursión?
 factorial' :: Int -> Int 
 factorial' x = productoria' [1..x] id
 
-{-ç
+{-
 e) multiplicaPares :: [Int] -> Int que calcula el producto de todos los números pares de una lista.
 -}
 
