@@ -122,3 +122,7 @@ productoria' (x:xs) t = t (x) * (productoria' xs t)
 
 paratodo'' :: [Bool] -> Bool
 paratodo'' xs = paratodo' xs (==True)
+
+{-
+Testing to see how I can make a pull request
+-}
