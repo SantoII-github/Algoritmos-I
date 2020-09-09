@@ -239,7 +239,7 @@ multiplicaPares' xs = productoria' (soloPares' xs)  id
 
 {-
 10. La función primIgualesA toma un valor y una lista, y calcula el tramo inicial
-más largo de la lista cuyos elementos osn iguales a ese valor. Por ejemplo:
+más largo de la lista cuyos elementos son iguales a ese valor. Por ejemplo:
 
 primIgualesA 3 [3, 3, 4, 1] = [3, 3]
 primIgualesA 3 [4, 3, 3, 4, 1] = []
