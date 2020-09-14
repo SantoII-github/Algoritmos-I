@@ -35,7 +35,7 @@ sumatoria [] = 0
 sumatoria (x:xs) = x + sumatoria xs
 
 {-
-Ejercicio 2 c) productoria :: [Int] -> Int, que calcula el producto de todos los elementos una la lista de enteros.
+Ejercicio 2 c) productoria :: [Int] -> Int, que calcula el producto de todos los elementos de una lista de enteros.
 -}
 
 productoria :: [Int] -> Int
