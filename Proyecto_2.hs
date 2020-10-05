@@ -248,7 +248,7 @@ a_inc (Rama arbolIzq x arbolDer) = Rama (a_inc arbolIzq) (x + 1) (a_inc arbolDer
 {-
 a_map :: (a -> b) -> Arbol a -> Arbol b que dada una función y un árbol,
 devuelve el árbol con la misma estructura, que resulta de aplicar la función a cada uno
-de los elementos del árbol. Revisa la definción de la función anterior y reprogramala
+de los elementos del árbol. Revisa la definición de la función anterior y reprogramala
 usando a_map.
 -}
 
