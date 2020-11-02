@@ -13,6 +13,7 @@ void imprimeChau(void)
 int main(void)
 {
     imprimeHola();
+    imprimeHola();
     imprimeChau();
     imprimeChau();
 
