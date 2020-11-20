@@ -14,7 +14,7 @@ bool esPrimo(int n) //Función que devuelve un booleano que indica si el entero 
     }
     while (i < n)
     {
-        if ((n % i) == 0)
+        if (((n % i) == 0) && esPrimo)
         {
             esPrimo = false;
         }
